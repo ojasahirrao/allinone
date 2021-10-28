@@ -25,8 +25,8 @@
   	state: present
    - name: Start the Container
  	docker_container:
-  	name: python
-  	image: "ojasahirrao/python:{{DOCKER_TAG}}"
+  	name: images
+  	image: "ojasahirrao/images:{{DOCKER_TAG}}"
   	state: started
   	restart: yes
   	ports:
